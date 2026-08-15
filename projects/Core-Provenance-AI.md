@@ -1,34 +1,66 @@
-# Core Provenance AI
+# CoreProvenance™ — Security Intelligence & Provenance Dashboard
 
-**Private AI/web project**
+**Private project — public portfolio documentation**
 
-## Project Status
+## Overview
 
-**Private development project**
+CoreProvenance is a security-focused web dashboard and management platform described in the project's design plan as a command center for security telemetry, forensic exploration, policy management, model lifecycle, device trust and API documentation.
 
-The original implementation remains in its dedicated private repository. This portfolio entry documents the project at a high level and does not copy or republish its source code.
+## Product Scope Verified in the Project Plan
 
-## Verified Technology Direction
+- SOC-style real-time monitoring dashboard
+- Forensic causal explorer for process and event relationships
+- Alert management and evidence export
+- Detection-policy management
+- ML model/snippet lifecycle management
+- Device trust and attestation views
+- Model registry and federation concepts
+- Interactive security API documentation
+- Architecture and security-reference pages
+- AI-assisted threat analysis and explainable verdicts
 
-The repository currently identifies the project as a modern web application built with:
+The repository plan describes these as the target product scope; this portfolio deliberately does not present every planned capability as production-complete.
 
-- TypeScript
+## Security Architecture Direction
+
+The project plan specifies security-oriented controls including:
+
+- Role-based access control
+- Supabase Row Level Security (RLS)
+- Append-only audit logging
+- Device attestation concepts
+- Signed forensic-bundle metadata
+- Model/snippet integrity verification
+- Security boundaries and mTLS documentation
+- Controlled/defensive handling of potentially abusable API material
+
+## Verified Frontend Stack
+
 - React
+- TypeScript
 - Vite
+- Supabase JavaScript client
+- TanStack React Query
+- React Router
 - Tailwind CSS
-- shadcn/ui
+- Radix UI
+- Recharts
+- React Hook Form
+- Zod
+- Vitest
+- Lovable Cloud / AI integration
 
-## Development Model
+## AI & Detection Direction
 
-The repository documentation indicates development through a modern frontend workflow and integration with the Lovable development environment.
+The planned AI layer is intended to support alert explanation, causal-chain interpretation, policy suggestions and bilingual security summaries. The project also describes ML verdicts with confidence and feature-importance information.
 
-## Portfolio Policy
+## Source & Privacy
 
-Source code remains in the original private repository. Public portfolio material is limited to high-level descriptions, verified technologies, and links to the original project.
+Canonical implementation remains private:
 
-## Source Repository
+[core-provenance-ai](https://github.com/mukhtarprov1-hue/core-provenance-ai)
 
-[Private project repository](https://github.com/mukhtarprov1-hue/core-provenance-ai)
+The repository currently contains a `.env` file, so its source must not be published as part of this public portfolio. This page contains documentation and verified architecture/product information only.
 
 ## Related
 
