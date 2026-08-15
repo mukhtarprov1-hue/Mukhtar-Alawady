@@ -4,11 +4,9 @@
 
 🎓 **Bachelor of Cybersecurity and Networks** — Amran University, Yemen · **2026**
 
-This repository is my **personal portfolio and project index**. It organizes my cybersecurity projects, security labs, research, automation work, technical documentation, and selected academic work in one place.
+This repository is my **personal portfolio and documentation index**. It organizes my cybersecurity projects, security labs, research, automation work, technical documentation, and selected academic work in one place.
 
-> **Portfolio-only policy:** this repository is an index and documentation layer. It does **not** replace, delete, move, or republish the source code of my existing projects. Original project repositories remain independent, and private repositories remain private unless I explicitly decide otherwise.
-
-The goal is to show practical cybersecurity capability through real work, documented engineering decisions, reproducible labs, and evidence-backed projects.
+> **Portfolio-only policy:** this repository is an index and documentation layer. It does **not** replace, delete, move, or republish the source code of existing projects. Original project repositories remain independent, and private repositories remain private unless I explicitly decide otherwise.
 
 ---
 
@@ -32,40 +30,35 @@ The goal is to show practical cybersecurity capability through real work, docume
 
 ## 🚀 Featured Work
 
-### 🛡️ CyberShield
-Android cybersecurity platform focused on practical device-security capabilities, privacy, permissions, secure storage, network security and security monitoring.
+### 🛡️ [CyberShield](./projects/cybershield.md)
+Android cybersecurity platform focused on practical device-security capabilities, privacy, permissions, secure storage, network security, and security monitoring.
 
-**Core technology direction:** Kotlin · Jetpack Compose · Room · DataStore · Hilt · Coroutines & Flow · MVVM · Clean Architecture
+**Canonical repository:** [CyberShieldHQ](https://github.com/mukhtarprov1-hue/CyberShieldHQ)
 
-**Repository:** [CyberShieldHQ](https://github.com/mukhtarprov1-hue/CyberShieldHQ)
+### 🌐 [Yemen Cyber Security](./projects/yemen-cyber-security.md)
+Cybersecurity initiative focused on organizing security knowledge, practical resources, research, awareness, and technical work relevant to Yemen.
 
----
-
-### 🌐 Yemen Cyber Security
-A cybersecurity initiative focused on organizing security knowledge, practical resources, research, awareness and technical work relevant to Yemen.
-
-**Repository:** [yemen-cyber-security](https://github.com/mukhtarprov1-hue/yemen-cyber-security)
-
----
+**Canonical repository:** [yemen-cyber-security](https://github.com/mukhtarprov1-hue/yemen-cyber-security)
 
 ### 🖥️ CyberVision
-Network-security and monitoring work focused on traffic visibility, packet analysis, monitoring concepts and security-oriented controls.
-
-**Technology direction:** Python · Scapy · SQLite · network monitoring
-
----
+Network-security and monitoring work focused on traffic visibility, packet analysis, monitoring concepts, and security-oriented controls.
 
 ### 🤖 AI-Assisted Website Security Assessment
-Security-assessment work combining web vulnerability discovery, OWASP-oriented testing, APIs, automated analysis and machine-learning techniques.
+Security-assessment work combining web vulnerability discovery, OWASP-oriented testing, APIs, automated analysis, and machine-learning techniques.
 
-**Technology direction:** Python · web security tooling · APIs · machine learning · security reporting
+### 🛰️ Network Security & IDS Labs
+Practical networking and defensive-security work covering packet analysis, monitoring, segmentation, routing, VPNs, and intrusion-detection concepts.
 
 ---
 
-### 🛰️ Network Security & IDS Labs
-Practical networking and defensive-security work covering packet analysis, monitoring, segmentation, routing, VPNs and intrusion-detection concepts.
+## 📚 Portfolio Navigation
 
-**Technology direction:** Wireshark · Nmap · Cisco/GNS3/EVE-NG · Suricata · Snort · Zeek
+- **[Projects](./projects/)** — project catalog and canonical repository links
+- **[Security Labs](./security-labs/)** — authorized security and networking lab index
+- **[Research](./research/)** — research notes and technical studies
+- **[Tools](./tools/)** — security automation and utility documentation
+- **[Documentation](./documentation/)** — architecture, testing, and engineering notes
+- **[Portfolio Policy](./PORTFOLIO_POLICY.md)** — preservation, privacy, and source-code rules
 
 ---
 
@@ -144,27 +137,31 @@ Selected academic areas:
 ├── research/        # Research notes, papers, and technical studies
 ├── tools/           # Security automation and utility documentation
 ├── documentation/   # Architecture, testing, and technical documents
-└── assets/          # Diagrams and supporting media
+├── assets/          # Diagrams and supporting media
+├── PORTFOLIO_POLICY.md
+├── SECURITY.md
+└── CONTRIBUTING.md
 ```
 
-This repository is designed as a **portfolio layer**. Original source code stays in its own project repository; this repository does not duplicate project source code.
+Original source code stays in each project's own repository. This repository is the **presentation and documentation layer**.
 
 ---
 
 ## 📌 Project Documentation Standard
 
-For every project I publish, I aim to document:
+For every project documented here, the portfolio aims to cover:
 
 - Problem statement and objectives
+- Scope and assumptions
 - Architecture and design decisions
 - Technologies and dependencies
-- Setup and usage
+- Setup and usage information where appropriate
 - Functional and security testing
 - Screenshots or diagrams where useful
 - Limitations and known risks
 - Responsible-use guidance
 - Future improvements and roadmap
-- Link to the original project repository when appropriate
+- Link to the canonical project repository
 
 ---
 
