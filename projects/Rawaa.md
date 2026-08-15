@@ -1,54 +1,146 @@
 # Rawaa (رواء) — Water Management & Community Platform
 
-**Private project — public portfolio documentation**
+> **Private product · Public technical case study**
 
-## Overview
+## 1. Product Summary
 
-The repository `flowing-wellspring-cooperation-acceabc8` contains a product branded in the source as **رواء / موئل الرواء**. Its design and implementation plan describe a role-aware digital platform for managing a water-management ecosystem, with systems and modules for wells, local operations, market activity, maintenance, security/guard functions, news and community access.
+Rawaa, branded in the source as **رواء / موئل الرواء**, is a role-aware digital platform designed for a water-management ecosystem. Its documented product model combines operational systems, community-facing capabilities, permissions, feature management, subscriptions and security auditing.
 
-## Product Model
+The substantive repository contains an engineering plan and implementation direction for the product. This public case study documents the verified scope without publishing source code.
 
-The documented architecture uses:
+## 2. Product Problem
 
-**Platform → Systems → Modules → Features → Permissions → UI Components**
+Water-management ecosystems involve multiple actors, operational records, maintenance activities, field responsibilities and community needs. Rawaa is designed to place those workflows inside a structured platform where access and capabilities can be managed by role and feature.
 
-with server-side feature evaluation, role-based access, feature flags and subscription-aware enforcement.
+## 3. Product Architecture
 
-## Verified Domain Modules
+The documented product hierarchy is:
 
-The product plan seeds and references a water-management system with modules including:
+```text
+Platform
+  ↓
+Systems
+  ↓
+Modules
+  ↓
+Features
+  ↓
+Permissions
+  ↓
+UI Components
+```
+
+This hierarchy is combined with server-side evaluation, role-based access, feature flags and subscription-aware controls.
+
+## 4. Verified Domain Modules
+
+The source plan identifies a water-management system with modules covering:
 
 - Wells
-- Operational/field records
-- Market-related functionality
+- Operational / field records
+- Market-related activity
 - Maintenance
-- Guard/security operations
+- Guard / security operations
 - News
-- Community-facing capabilities
+- Community access
 
-Roles identified in the plan include administrator, representative, guard, maintenance, farmer and community users.
+## 5. User Roles
 
-## Platform Capabilities
+The product plan identifies role categories including:
 
-- Role-based permissions
-- Feature flags and gradual rollout
-- Subscription plans and per-plan limits
-- Audit logging
-- Server-side UI manifest generation
-- Row Level Security (RLS)
-- Administrative system/module/feature management
-- RTL-aware Arabic user experience
-- Future-ready tenant identifier support
+- Administrator
+- Representative
+- Guard
+- Maintenance
+- Farmer
+- Community user
 
-## Security Engineering
+The role model allows the same platform to serve different responsibilities without treating every user as having the same capabilities.
 
-The plan places authorization decisions on the server and explicitly uses role checks, business rules and database RLS. Administrative changes are intended to be audited, and new systems/modules/features default to disabled until enabled by an authorized administrator.
+## 6. Platform Capabilities
 
-## Verified Technology Direction
+### Feature Management
+
+- Systems/modules/features catalog
+- Enable/disable controls
+- Feature flags
+- Gradual rollout
+- Role/user/region/percentage/plan targeting
+- Kill-switch concepts
+
+### Access Management
+
+- Role-aware feature access
+- Permission catalog
+- Role-permission mapping
+- Role-feature mapping
+- Server-side evaluation
+
+### Subscription Management
+
+- Subscription plans
+- Plan limits
+- User subscriptions
+- Subscription-aware feature enforcement
+
+### Auditability
+
+- Append-oriented audit logs
+- Actor and entity context
+- Reason and change tracking
+- Administrative visibility controls
+
+## 7. Security Architecture
+
+The project plan explicitly prioritizes server-side security decisions:
+
+```text
+System
+  ↓
+Module
+  ↓
+Feature
+  ↓
+Permission
+  ↓
+Business Rules
+  ↓
+Row Level Security (RLS)
+```
+
+The design avoids treating client-side visibility as the security boundary.
+
+Administrative writes are intended to require privileged server-side role checks, while audit logging records security-sensitive changes.
+
+## 8. Data Architecture Direction
+
+The planned data model includes catalogs and control tables for:
+
+- Systems
+- Modules
+- Features
+- Permissions
+- Application roles
+- Role permissions
+- Role features
+- Feature flags
+- Subscription plans
+- User subscriptions
+- Audit logs
+
+A nullable `tenant_id` is also described as future-ready infrastructure for possible multi-tenant expansion.
+
+## 9. User Experience
+
+The project explicitly accounts for Arabic RTL presentation. This is important for the target operational environment and supports a localized interface model rather than treating Arabic as a secondary afterthought.
+
+## 10. Verified Technology Direction
 
 - React 19
 - TypeScript 5.8
-- TanStack Start / Router / React Query
+- TanStack Start
+- TanStack Router
+- TanStack React Query
 - Vite 8
 - Supabase
 - Tailwind CSS 4
@@ -59,19 +151,38 @@ The plan places authorization decisions on the server and explicitly uses role c
 - Lucide React
 - Lovable Cloud tooling
 
-## Important Status Note
+## 11. Implementation Status
 
-This public portfolio page documents the product architecture and verified scope found in the private repository's engineering plan. It does **not** claim that every planned capability is production-complete.
+This case study separates three categories:
 
-## Source & Privacy
+**Verified:** repository implementation/material and technology configuration.
 
-Canonical source remains private:
+**Architectural direction:** capabilities described in the engineering plan but not necessarily completed end-to-end.
 
-[flowing-wellspring-cooperation-acceabc8](https://github.com/mukhtarprov1-hue/flowing-wellspring-cooperation-acceabc8)
+**Production readiness:** not claimed without supporting validation evidence.
 
-No source code is copied into this public portfolio repository.
+## 12. Engineering Strengths
 
-## Related
+- Explicit product hierarchy
+- Centralized authorization model
+- Feature-flag architecture
+- Subscription-aware controls
+- Auditability by design
+- RLS-oriented data security
+- Arabic/RTL-aware interface strategy
+- Extensible module structure
+
+## 13. Source
+
+**Canonical implementation:** [flowing-wellspring-cooperation-acceabc8](https://github.com/mukhtarprov1-hue/flowing-wellspring-cooperation-acceabc8)
+
+**Related project record:** [flowing-wellspring-cooperation](https://github.com/mukhtarprov1-hue/flowing-wellspring-cooperation)
+
+## 14. Privacy & Source Policy
+
+No source code, environment secrets, private data or internal implementation files are copied into this public case study. The original repositories remain the source of truth.
+
+## 15. Related
 
 - [Mukhtar Alawady Portfolio](https://github.com/mukhtarprov1-hue/Mukhtar-Alawady)
 - [GitHub Profile](https://github.com/mukhtarprov1-hue)
