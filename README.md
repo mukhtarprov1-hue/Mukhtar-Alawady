@@ -4,9 +4,11 @@
 
 🎓 **Bachelor of Cybersecurity and Networks** — Amran University, Yemen · **2026**
 
-This repository is my personal cybersecurity portfolio: a structured index of practical projects, security labs, research, automation work, technical documentation, and selected academic work.
+This repository is my **personal portfolio and project index**. It organizes my cybersecurity projects, security labs, research, automation work, technical documentation, and selected academic work in one place.
 
-The goal is simple: **show practical cybersecurity capability through real work, reproducible labs, documented engineering decisions, and evidence-backed projects.**
+> **Portfolio-only policy:** this repository is an index and documentation layer. It does **not** replace, delete, move, or republish the source code of my existing projects. Original project repositories remain independent, and private repositories remain private unless I explicitly decide otherwise.
+
+The goal is to show practical cybersecurity capability through real work, documented engineering decisions, reproducible labs, and evidence-backed projects.
 
 ---
 
@@ -137,31 +139,32 @@ Selected academic areas:
 
 ```text
 .
-├── projects/        # Selected software and cybersecurity projects
-├── security-labs/   # Reproducible security and networking labs
+├── projects/        # Portfolio index and selected project documentation
+├── security-labs/   # Reproducible security and networking lab documentation
 ├── research/        # Research notes, papers, and technical studies
-├── tools/           # Security automation and utility projects
+├── tools/           # Security automation and utility documentation
 ├── documentation/   # Architecture, testing, and technical documents
 └── assets/          # Diagrams and supporting media
 ```
 
-Each published project should document **purpose, architecture, technologies, setup, usage, testing, limitations, security considerations, and results**.
+This repository is designed as a **portfolio layer**. Original source code stays in its own project repository; this repository does not duplicate project source code.
 
 ---
 
-## 📌 How to Evaluate a Project
+## 📌 Project Documentation Standard
 
-For every project I publish, I aim to make the work reviewable through:
+For every project I publish, I aim to document:
 
-- Clear problem statement and objectives
+- Problem statement and objectives
 - Architecture and design decisions
-- Reproducible setup instructions
-- Technology and dependency disclosure
+- Technologies and dependencies
+- Setup and usage
 - Functional and security testing
 - Screenshots or diagrams where useful
 - Limitations and known risks
 - Responsible-use guidance
 - Future improvements and roadmap
+- Link to the original project repository when appropriate
 
 ---
 
@@ -169,7 +172,7 @@ For every project I publish, I aim to make the work reviewable through:
 
 Security testing and offensive-security demonstrations published here are intended for **authorized environments, educational laboratories, research, and systems where permission has been granted**.
 
-No credentials, API keys, private data, or sensitive production information should be committed to this repository.
+No credentials, API keys, private data, secrets, or sensitive production information should be committed to this portfolio repository.
 
 ---
 
