@@ -1,82 +1,201 @@
 # AMAN / Amntak — Cybersecurity Learning & Labs Platform
 
-**Private project — public portfolio documentation**
+> **Private product · Public technical case study**
 
-## Overview
+## 1. Product Summary
 
-AMAN is a private software project whose verified implementation combines a .NET backend with a web client for a cybersecurity-oriented learning and practice platform. The backend exposes authentication, courses, hands-on labs, profiles/dashboard, social posts, notifications, and subscription/billing capabilities.
+AMAN / Amntak is a cybersecurity learning and hands-on practice platform built around three connected experiences: structured learning, interactive security laboratories, and community/progression features.
 
-## Product Model
+The verified implementation combines a .NET backend with a companion Next.js web client. The public portfolio documents the product and architecture while the source remains private.
 
-The available implementation indicates a platform designed around three connected experiences:
+## 2. Product Problem
 
-1. **Learning** — courses, course discovery, enrollment, and progress.
-2. **Hands-on security practice** — labs that can be started/stopped and can accept flag submissions.
-3. **Community and progression** — profiles, posts/feed, notifications, points, experience level, rank, achievements, and subscription plans.
+Traditional learning platforms can separate theory from practical security work. AMAN / Amntak is designed to connect:
 
-## Verified Backend Capabilities
+**Course → Practice Lab → Submission → Progress → Community → Skill Progression**
 
-- User registration and password login
+The product model therefore treats practical security training as an integrated application experience rather than a collection of static lessons.
+
+## 3. Core User Journeys
+
+### Learner
+
+1. Create an account or authenticate externally.
+2. Discover and filter courses.
+3. Enroll in a course.
+4. Track course progress.
+5. Browse available security labs.
+6. Start a lab instance.
+7. Perform the authorized exercise.
+8. Submit the challenge flag.
+9. Accumulate points, experience and progression signals.
+10. Review achievements, rank and activity.
+
+### Community User
+
+- Maintain a profile.
+- Publish posts.
+- Consume a feed.
+- Receive targeted notifications.
+- Participate in platform progression.
+
+### Platform Operator
+
+- Manage learning content and labs.
+- Manage subscription plans.
+- Operate authenticated platform services.
+- Observe platform and user progression signals.
+
+## 4. Verified Backend Capabilities
+
+- Registration and password login
 - Google external authentication flow
-- JWT-based authentication support
-- Course listing, search/category filtering, details, enrollment and enrolled-course queries
-- Lab listing, lab instances, start/stop lifecycle and flag submission
-- User dashboard and profile endpoints
-- Social feed and post creation
-- Real-time notifications using SignalR
+- JWT bearer authentication support
+- Course listing and search/category filtering
+- Course details and enrollment
+- Enrolled-course queries
+- Lab listing
+- Lab instance start/stop lifecycle
+- Flag submission
+- User profile and dashboard endpoints
+- Social post creation and feed retrieval
+- Authenticated real-time notifications via SignalR
 - Subscription plan listing and subscription workflow
-- OpenAPI/Scalar API documentation support
+- OpenAPI and Scalar API documentation
 
-## Architecture
+## 5. Architecture
 
-The backend is structured into separate API, Application, Core, and Infrastructure projects, consistent with a layered/Clean Architecture direction.
+The backend is organized into four major layers:
 
-- **API:** ASP.NET Core controllers, authentication, SignalR hub and HTTP surface
-- **Application:** MediatR commands/queries, FluentValidation and mapping
-- **Core:** domain layer
-- **Infrastructure:** Entity Framework Core with SQL Server and Docker integration
+```text
+API
+  ↓
+Application
+  ↓
+Core
+  ↓
+Infrastructure
+```
 
-## Verified Technology Stack
+### API
 
-- .NET 10 / ASP.NET Core 10
-- C#
-- Entity Framework Core 10
-- SQL Server
-- MediatR
-- FluentValidation
-- AutoMapper
-- JWT Bearer Authentication
-- Google Authentication
-- SignalR
-- OpenAPI
-- Scalar
-- Docker.DotNet
+ASP.NET Core HTTP endpoints, authentication surface and SignalR hub.
 
-## Web Client
+### Application
 
-The companion `amntak-web` repository provides the browser-facing experience and uses Next.js 16, React 19, TypeScript, TanStack React Query, tRPC, Zod, Tailwind CSS and Framer Motion.
+MediatR-based commands and queries, validation, mapping and application-level workflows.
 
-## Product Experience Observed
+### Core
 
-The dashboard is designed around cybersecurity progression: active labs, recent courses and progress, points, experience level, rank, completed challenges, streaks and achievements.
+Domain-oriented layer containing core application abstractions and business concepts.
 
-## Security & Engineering Notes
+### Infrastructure
 
-The project demonstrates practical security engineering concerns including authentication, authorization boundaries, current-user services, protected lab actions, external identity integration and real-time authenticated notifications.
+Entity Framework Core, SQL Server and infrastructure integrations, including Docker integration.
 
-The current private implementation also contains development-stage placeholders in some flows; this portfolio description therefore distinguishes the implemented architecture from production-readiness claims.
+## 6. Security Architecture
 
-## Source & Privacy
+Security-relevant design elements verified in the implementation include:
 
-The canonical source remains private:
+- JWT bearer authentication
+- External identity integration through Google
+- Protected current-user operations
+- Authorization boundaries for lab actions
+- Authenticated real-time notification channel
+- Layer separation between API, application, domain and infrastructure concerns
 
-[AMAN](https://github.com/mukhtarprov1-hue/AMAN)
+### Engineering Caveat
 
-No source code is copied into this public portfolio repository.
+The private implementation contains development-stage placeholders in some flows. This portfolio therefore distinguishes the **implemented architectural direction** from a claim of production readiness.
 
-## Related
+## 7. Technology Stack
 
-- [AMNTAK Web Client](./Amntak-Web.md)
-- [Mukhtar Alawady Portfolio](https://github.com/mukhtarprov1-hue/Mukhtar-Alawady)
-- [GitHub Profile](https://github.com/mukhtarprov1-hue)
-- [LinkedIn](https://www.linkedin.com/in/mukhtar-alawady-078697382/)
+| Layer | Technology |
+|---|---|
+| Backend | .NET 10 / ASP.NET Core 10 |
+| Language | C# |
+| ORM | Entity Framework Core 10 |
+| Database | SQL Server |
+| Application Pattern | MediatR |
+| Validation | FluentValidation |
+| Mapping | AutoMapper |
+| Authentication | JWT Bearer + Google Authentication |
+| Realtime | SignalR |
+| API Docs | OpenAPI + Scalar |
+| Infrastructure | Docker.DotNet |
+| Web Client | Next.js 16 + React 19 + TypeScript |
+| Web Data | TanStack React Query + tRPC |
+| Validation | Zod |
+| UI | Tailwind CSS + Framer Motion |
+
+## 8. Product Experience
+
+The verified dashboard model includes:
+
+- Active labs
+- Recent courses and progress
+- Points
+- Experience level
+- Rank
+- Completed challenges
+- Streaks
+- Achievement indicators
+
+This gives the platform a **learning + practice + progression** product loop.
+
+## 9. Security Training Model
+
+The lab lifecycle is particularly relevant to cybersecurity training:
+
+```text
+Lab Catalog
+   ↓
+Start Lab
+   ↓
+Lab Instance
+   ↓
+Practical Exercise
+   ↓
+Flag Submission
+   ↓
+Validation
+   ↓
+Progress / Score
+```
+
+The design naturally supports isolated, authorized practical security exercises without exposing offensive project source code in the portfolio.
+
+## 10. Engineering Strengths
+
+- Clear separation of backend concerns
+- Typed application workflows
+- Dedicated security-oriented lab lifecycle
+- Authentication and protected-user operations
+- Real-time platform notifications
+- Structured course and progression model
+- Web/backend separation
+- API documentation support
+
+## 11. Known Development Considerations
+
+The private repository shows some MVP-stage placeholders and hard-coded development values in individual flows. These should be addressed before any production deployment, especially around authenticated identity propagation, token handling, external login callbacks and billing identity association.
+
+This observation is documented as an engineering limitation, not exposed source code.
+
+## 12. Portfolio Evidence
+
+The public portfolio records only verified product behavior and architecture. Source files, credentials, internal datasets and implementation artifacts remain in the canonical private repository.
+
+## 13. Source
+
+**Canonical repository:** [AMAN](https://github.com/mukhtarprov1-hue/AMAN)
+
+**Companion web client:** [amntak-web](https://github.com/mukhtarprov1-hue/amntak-web)
+
+## 14. Privacy & Source Policy
+
+No source code from the private repositories is copied into this public case study. The original repositories remain the source of truth.
+
+## 15. Responsible Security
+
+Security laboratories and offensive-security exercises must be operated only in systems and environments where the required authorization exists.
