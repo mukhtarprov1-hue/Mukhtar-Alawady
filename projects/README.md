@@ -9,11 +9,11 @@
 | Project | Area | Canonical repository | Portfolio status |
 |---|---|---|---|
 | **CyberShield** | Android Cybersecurity / Mobile Security | [CyberShieldHQ](https://github.com/mukhtarprov1-hue/CyberShieldHQ) | Primary project; source remains private |
-| **Yemen Cyber Security** | Cybersecurity Initiative / Knowledge Platform | [yemen-cyber-security](https://github.com/mukhtarprov1-hue/yemen-cyber-security) | Private development initiative |
-| **AMAN / Amntak** | Cybersecurity Learning / Labs / Community | [AMAN](https://github.com/mukhtarprov1-hue/AMAN) | Private project; verified platform architecture documented |
-| **Amntak Web** | Web Client / Security Learning Platform | [amntak-web](https://github.com/mukhtarprov1-hue/amntak-web) | Private project; verified client stack documented |
-| **CoreProvenance** | Security Intelligence / Provenance / AI | [core-provenance-ai](https://github.com/mukhtarprov1-hue/core-provenance-ai) | Private project; architecture and planned scope documented |
-| **Rawaa (رواء)** | Water Management / Community Platform | [flowing-wellspring-cooperation-acceabc8](https://github.com/mukhtarprov1-hue/flowing-wellspring-cooperation-acceabc8) | Private product; verified architecture documented |
+| **AMAN / Amntak** | Cybersecurity Learning / Hands-on Labs / Community | [AMAN](https://github.com/mukhtarprov1-hue/AMAN) | Private product; public case study |
+| **Amntak Web** | Web Client / Cybersecurity Learning Platform | [amntak-web](https://github.com/mukhtarprov1-hue/amntak-web) | Private product; public case study |
+| **Yemen Cyber Security** | Cybersecurity Initiative / Knowledge Platform | [yemen-cyber-security](https://github.com/mukhtarprov1-hue/yemen-cyber-security) | Private initiative; public case study |
+| **CoreProvenance** | SOC / Security Intelligence / AI-Assisted Analysis | [core-provenance-ai](https://github.com/mukhtarprov1-hue/core-provenance-ai) | Private project; architecture case study |
+| **Rawaa (رواء)** | Water Management / Community Operations Platform | [flowing-wellspring-cooperation-acceabc8](https://github.com/mukhtarprov1-hue/flowing-wellspring-cooperation-acceabc8) | Private product; architecture case study |
 | **AI-Assisted Website Security Assessment** | Web Security / AI Security | Canonical repository to be linked when available | Portfolio entry |
 | **CyberVision** | Network Monitoring / Security Analysis | Canonical repository to be linked when available | Portfolio entry |
 | **Network Security & IDS Labs** | Network Security / Detection | Lab work | Portfolio entry |
@@ -21,27 +21,35 @@
 ## Documented Project Pages
 
 - [CyberShield](./CyberShield.md)
-- [Yemen Cyber Security](./Yemen-Cyber-Security.md)
 - [AMAN / Amntak](./AMAN.md)
 - [Amntak Web](./Amntak-Web.md)
+- [Yemen Cyber Security](./Yemen-Cyber-Security.md)
 - [CoreProvenance](./Core-Provenance-AI.md)
 - [Rawaa (رواء)](./Rawaa.md)
 - [Verdent](./Verdent.md)
 - [Pionerix](./Pionerix.md)
 - [Flowing Wellspring Cooperation](./Flowing-Wellspring-Cooperation.md)
 
-## Additional Repositories
+## Repository Transparency
 
-Existing repositories are preserved in place and can be linked here as their documentation is reviewed:
+Some case studies are based on implementation evidence available in private source repositories. When the available material is only a roadmap, plan, minimal README, or empty repository, the portfolio explicitly labels that limitation rather than inventing product claims.
 
-- [Verdent](https://github.com/mukhtarprov1-hue/Verdent)
-- [pionerix](https://github.com/mukhtarprov1-hue/pionerix)
-- [flowing-wellspring-cooperation](https://github.com/mukhtarprov1-hue/flowing-wellspring-cooperation)
-- [flowing-wellspring-cooperation-acceabc8](https://github.com/mukhtarprov1-hue/flowing-wellspring-cooperation-acceabc8)
+## Product Case Study Standard
+
+Each substantive project page aims to cover:
+
+1. Product purpose and problem addressed
+2. Users / actors and primary workflows
+3. Core capabilities and modules
+4. Architecture and major components
+5. Technologies and dependencies verified from source
+6. Security model and engineering considerations
+7. Testing / validation evidence when available
+8. Current implementation status and known limitations
+9. Roadmap / next-stage direction when documented
+10. Canonical repository link
 
 ## Portfolio Classification
-
-Projects are organized by the capabilities they demonstrate rather than by academic course alone.
 
 ### Security Engineering
 - Security architecture
@@ -98,25 +106,10 @@ Projects are organized by the capabilities they demonstrate rather than by acade
 - Subscription-aware access
 - Audit logging and RLS
 
-## Documentation Standard
-
-Each project documented here should progressively cover:
-
-1. Problem and objectives
-2. Scope and assumptions
-3. Product model and user journeys
-4. Architecture / design
-5. Technologies and dependencies
-6. Security considerations
-7. Testing and validation
-8. Results and limitations
-9. Responsible-use notes
-10. Link to the canonical source repository
-
 ## Evidence Standard
 
 Product claims in this portfolio are based on verifiable repository material. Planned capabilities are labeled as planned or architectural direction; features are not described as production-complete without supporting evidence.
 
 ## Source-of-Truth Rule
 
-The **original project repository is always the source of truth for source code**. This portfolio may contain summaries, diagrams, reports, screenshots, and links, but it must not duplicate or republish project source code unless explicitly authorized.
+The **original project repository is always the source of truth for source code**. This portfolio may contain summaries, architecture notes, diagrams, non-sensitive screenshots, reports, and links, but it must not duplicate or republish project source code unless explicitly authorized.
