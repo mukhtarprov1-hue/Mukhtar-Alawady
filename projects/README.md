@@ -1,32 +1,38 @@
 # Projects
 
-> The canonical portfolio index for Mukhtar Alawady's software, cybersecurity, networking, research, and security-engineering work.
+> Canonical portfolio index for Mukhtar Alawady's software, cybersecurity, networking, research, and security-engineering work.
 >
-> **Important:** This repository is an index and documentation layer. Project source code remains in its original repository. No project is deleted, moved, or copied here without explicit authorization.
+> **Portfolio rule:** this repository is an index and documentation layer. Original source code remains in its original repository. No project is deleted, moved, copied, or republished here without explicit authorization.
 
 ## Featured Projects
 
-| Project | Area | Repository | Portfolio status |
+| Project | Area | Canonical repository | Portfolio status |
 |---|---|---|---|
-| **CyberShield** | Android Cybersecurity / Mobile Security | [CyberShieldHQ](https://github.com/mukhtarprov1-hue/CyberShieldHQ) | Primary project; source remains in original repository |
-| **Yemen Cyber Security** | Cybersecurity Initiative / Knowledge Platform | [yemen-cyber-security](https://github.com/mukhtarprov1-hue/yemen-cyber-security) | Primary public-facing initiative |
-| **AI-Assisted Website Security Assessment** | Web Security / AI Security | Project work; canonical source to be linked when published | Portfolio entry |
-| **CyberVision** | Network Monitoring / Security Analysis | Project repository to be linked when available | Portfolio entry |
+| **CyberShield** | Android Cybersecurity / Mobile Security | [CyberShieldHQ](https://github.com/mukhtarprov1-hue/CyberShieldHQ) | Primary project; source remains private |
+| **Yemen Cyber Security** | Cybersecurity Initiative / Knowledge Platform | [yemen-cyber-security](https://github.com/mukhtarprov1-hue/yemen-cyber-security) | Private development initiative |
+| **Core Provenance AI** | AI / Web Application | [core-provenance-ai](https://github.com/mukhtarprov1-hue/core-provenance-ai) | Private project; verified web stack documented |
+| **AI-Assisted Website Security Assessment** | Web Security / AI Security | Canonical repository to be linked when available | Portfolio entry |
+| **CyberVision** | Network Monitoring / Security Analysis | Canonical repository to be linked when available | Portfolio entry |
 | **Network Security & IDS Labs** | Network Security / Detection | Lab work | Portfolio entry |
+
+## Documented Project Pages
+
+- [CyberShield](./CyberShield.md)
+- [Yemen Cyber Security](./Yemen-Cyber-Security.md)
+- [Core Provenance AI](./Core-Provenance-AI.md)
 
 ## Additional Repositories
 
-These existing repositories are preserved in place and can be linked here as their documentation is reviewed:
+Existing repositories are preserved in place and can be linked here as their documentation is reviewed:
 
-- [AMAN](https://github.com/mukhtarprov1-hue/AMAN) — application/project repository.
-- [amntak-web](https://github.com/mukhtarprov1-hue/amntak-web) — web application repository.
-- [core-provenance-ai](https://github.com/mukhtarprov1-hue/core-provenance-ai) — AI/web project repository.
-- [Verdent](https://github.com/mukhtarprov1-hue/Verdent) — software project repository.
-- [pionerix](https://github.com/mukhtarprov1-hue/pionerix) — software/project repository.
+- [AMAN](https://github.com/mukhtarprov1-hue/AMAN)
+- [amntak-web](https://github.com/mukhtarprov1-hue/amntak-web)
+- [Verdent](https://github.com/mukhtarprov1-hue/Verdent)
+- [pionerix](https://github.com/mukhtarprov1-hue/pionerix)
 
 ## Portfolio Classification
 
-Projects are organized by the capability they demonstrate rather than by academic course alone:
+Projects are organized by the capabilities they demonstrate rather than by academic course alone.
 
 ### Security Engineering
 - Security architecture
@@ -40,7 +46,7 @@ Projects are organized by the capability they demonstrate rather than by academi
 - Routing and switching security
 - Network monitoring
 - IDS/IPS concepts
-- VPNs and segmentation
+- VPNs and network segmentation
 
 ### Offensive Security
 - Reconnaissance
@@ -71,7 +77,7 @@ Projects are organized by the capability they demonstrate rather than by academi
 
 ## Documentation Standard
 
-For each project that is documented in this portfolio, the entry should cover:
+Each project documented here should progressively cover:
 
 1. Problem and objectives
 2. Scope and assumptions
@@ -85,4 +91,4 @@ For each project that is documented in this portfolio, the entry should cover:
 
 ## Source-of-Truth Rule
 
-The **original project repository is always the source of truth for source code**. This portfolio may contain summaries, diagrams, reports, screenshots, and links, but it should not duplicate or republish project source code unless explicitly authorized.
+The **original project repository is always the source of truth for source code**. This portfolio may contain summaries, diagrams, reports, screenshots, and links, but it must not duplicate or republish project source code unless explicitly authorized.
