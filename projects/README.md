@@ -14,9 +14,9 @@
 | **Yemen Cyber Security** | Cybersecurity Initiative / Knowledge Platform | [yemen-cyber-security](https://github.com/mukhtarprov1-hue/yemen-cyber-security) | Private initiative; public case study |
 | **CoreProvenance** | SOC / Security Intelligence / AI-Assisted Analysis | [core-provenance-ai](https://github.com/mukhtarprov1-hue/core-provenance-ai) | Private project; architecture case study |
 | **Rawaa (رواء)** | Water Management / Community Operations Platform | [flowing-wellspring-cooperation-acceabc8](https://github.com/mukhtarprov1-hue/flowing-wellspring-cooperation-acceabc8) | Private product; architecture case study |
-| **AI-Assisted Website Security Assessment** | Web Security / AI Security | Canonical repository to be linked when available | Portfolio entry |
-| **CyberVision** | Network Monitoring / Security Analysis | Canonical repository to be linked when available | Portfolio entry |
-| **Network Security & IDS Labs** | Network Security / Detection | Lab work | Portfolio entry |
+| **AI-Assisted Website Security Assessment** | Web Security / AI Security | Security assessment project; source not republished | Public case study |
+| **CyberVision** | Network Monitoring / Security Analysis | Network security project; source not republished | Public case study |
+| **Network Security & IDS Labs** | Network Security / Detection | Practical lab track; source not republished | Public case study |
 
 ## Documented Project Pages
 
@@ -26,6 +26,9 @@
 - [Yemen Cyber Security](./Yemen-Cyber-Security.md)
 - [CoreProvenance](./Core-Provenance-AI.md)
 - [Rawaa (رواء)](./Rawaa.md)
+- [AI-Assisted Website Security Assessment](./AI-Assisted-Website-Security-Assessment.md)
+- [CyberVision](./CyberVision.md)
+- [Network Security & IDS Labs](./Network-Security-IDS-Labs.md)
 - [Verdent](./Verdent.md)
 - [Pionerix](./Pionerix.md)
 - [Flowing Wellspring Cooperation](./Flowing-Wellspring-Cooperation.md)
@@ -108,7 +111,7 @@ Each substantive project page aims to cover:
 
 ## Evidence Standard
 
-Product claims in this portfolio are based on verifiable repository material. Planned capabilities are labeled as planned or architectural direction; features are not described as production-complete without supporting evidence.
+Product claims in this portfolio are based on verifiable repository material and the project documentation available for the work. Planned capabilities are labeled as planned or architectural direction; features are not described as production-complete without supporting evidence.
 
 ## Source-of-Truth Rule
 
