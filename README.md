@@ -10,9 +10,9 @@ This repository is my **personal cybersecurity portfolio and documentation index
 
 ## 🌍 Global Benchmark 2026
 
-[**Read the Global Cybersecurity GitHub Benchmark**](./GLOBAL-BENCHMARK-2026.md)
+[**Global Cybersecurity GitHub Benchmark**](./GLOBAL-BENCHMARK-2026.md) · [**Evidence Matrix**](./EVIDENCE-MATRIX-2026.md) · [**Research Standard**](./RESEARCH-STANDARD-2026.md) · [**Security & Quality Gates**](./SECURITY-QUALITY-GATES-2026.md) · [**Evidence Record Template**](./EVIDENCE-RECORD-TEMPLATE.md)
 
-The portfolio is being developed around an evidence-first standard inspired by strong cybersecurity research, engineering, offensive-security, defensive-security, and AI-security portfolios: clear positioning, verifiable implementation evidence, case studies, security controls, testing methodology, limitations, responsible-use boundaries, and reproducible documentation.
+The portfolio follows an evidence-first standard: clear positioning, verifiable implementation evidence, case studies, security controls, testing methodology, measurements, limitations, responsible-use boundaries, and reproducible documentation.
 
 ## 🧭 Portfolio Map
 
@@ -32,21 +32,21 @@ The portfolio is being developed around an evidence-first standard inspired by s
 
 ## 🚀 Featured Security Work
 
-### 🛡️ [CyberShield](./projects/CyberShield.md)
+### 🛡️ [CyberShield](./projects/CyberShield.md) · [Evidence Pack](./projects/CyberShield-EVIDENCE.md)
 Android cybersecurity platform focused on practical device-security capabilities, privacy, permissions, secure storage, network security, and security monitoring.
 
 **Canonical repository:** [CyberShieldHQ](https://github.com/mukhtarprov1-hue/CyberShieldHQ)
 
-### 🤖 [AI-Assisted Website Security Assessment](./projects/AI-Assisted-Website-Security-Assessment.md)
+### 🤖 [AI-Assisted Website Security Assessment](./projects/AI-Assisted-Website-Security-Assessment.md) · [Evidence Pack](./projects/AI-Assisted-Website-Security-Assessment-EVIDENCE.md)
 Application-security work combining authorized web assessment, OWASP-oriented testing, APIs, automated analysis, and machine-learning techniques.
 
-### 🖥️ [CyberVision](./projects/CyberVision.md)
+### 🖥️ [CyberVision](./projects/CyberVision.md) · [Evidence Pack](./projects/CyberVision-EVIDENCE.md)
 Network-monitoring and security-analysis work focused on traffic visibility, packet analysis, monitoring concepts, and security-oriented controls.
 
-### 🛰️ [Network Security & IDS Labs](./projects/Network-Security-IDS-Labs.md)
+### 🛰️ [Network Security & IDS Labs](./projects/Network-Security-IDS-Labs.md) · [Evidence Pack](./projects/Network-Security-IDS-Labs-EVIDENCE.md)
 Practical defensive-security work covering packet analysis, monitoring, segmentation, routing, VPNs, and intrusion-detection concepts.
 
-### 🔎 [CoreProvenance](./projects/Core-Provenance-AI.md)
+### 🔎 [CoreProvenance](./projects/Core-Provenance-AI.md) · [Evidence Pack](./projects/CoreProvenance-EVIDENCE.md)
 Security-intelligence and forensic dashboard concept covering event monitoring, alert management, causal exploration, policy management, model registry, attestation, auditability, and AI-assisted analysis.
 
 ### 🌐 [Yemen Cyber Security](./projects/Yemen-Cyber-Security.md)
@@ -63,7 +63,12 @@ Cybersecurity learning and hands-on practice platform covering courses, labs, au
 - **[Tools](./tools/)** — security automation and utility documentation
 - **[Documentation](./documentation/)** — architecture, testing, and engineering notes
 - **[Global Benchmark 2026](./GLOBAL-BENCHMARK-2026.md)** — portfolio quality and evidence standard
+- **[Evidence Matrix 2026](./EVIDENCE-MATRIX-2026.md)** — project-by-project evidence status
+- **[Research Standard 2026](./RESEARCH-STANDARD-2026.md)** — research and experiment methodology
+- **[Security & Quality Gates 2026](./SECURITY-QUALITY-GATES-2026.md)** — maturity gates for flagship projects
+- **[Evidence Record Template](./EVIDENCE-RECORD-TEMPLATE.md)** — reusable evidence format
 - **[Portfolio Policy](./PORTFOLIO_POLICY.md)** — preservation, privacy, and source-code rules
+- **[Security Policy](./SECURITY.md)** — responsible disclosure and authorized testing
 
 ## 🧰 Technical Toolbox
 
@@ -129,37 +134,23 @@ Selected academic areas:
 
 ```text
 .
-├── projects/        # Portfolio index and selected project documentation
+├── projects/        # Case studies and evidence packs
 ├── security-labs/   # Reproducible security and networking lab documentation
 ├── research/        # Research notes, papers, and technical studies
 ├── tools/           # Security automation and utility documentation
 ├── documentation/   # Architecture, testing, and technical documents
 ├── assets/          # Diagrams and supporting media
 ├── GLOBAL-BENCHMARK-2026.md
+├── EVIDENCE-MATRIX-2026.md
+├── RESEARCH-STANDARD-2026.md
+├── SECURITY-QUALITY-GATES-2026.md
+├── EVIDENCE-RECORD-TEMPLATE.md
 ├── PORTFOLIO_POLICY.md
 ├── SECURITY.md
 └── CONTRIBUTING.md
 ```
 
 Original source code stays in each project's own repository. This repository is the **presentation, evidence, and documentation layer**.
-
-## 📌 Project Documentation Standard
-
-For every substantive project documented here, the portfolio aims to cover:
-
-- Problem statement and objectives
-- Scope and assumptions
-- Users, assets, and trust boundaries where applicable
-- Architecture and design decisions
-- Security controls and threat considerations
-- Technologies and dependencies verified from source
-- Setup and usage information where appropriate
-- Functional and security testing
-- Evidence, observed results, and limitations
-- Screenshots or diagrams where useful
-- Responsible-use guidance
-- Future improvements and roadmap
-- Link to the canonical project repository
 
 ## 🔐 Responsible Security
 
