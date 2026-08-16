@@ -2,118 +2,118 @@
 
 > Security Intelligence · Provenance · AI-Assisted Analysis · Private Product
 
-## 1. Evidence boundary
+## 1. Verified repository evidence
 
-CoreProvenance is represented publicly as a technical case study. The canonical implementation remains private. This document distinguishes verified repository material from architectural/product direction.
+The canonical private repository is currently a Vite/React/TypeScript application. Its package manifest declares Vite, React, TypeScript, React Router, TanStack React Query, Vitest, Zod, Recharts, Supabase client libraries, and UI dependencies. fileciteturn34file0
+
+The `src` tree currently contains application, component, hook, integration, library, page, and test areas. fileciteturn35file0
+
+`src/App.tsx` currently wires concrete application routes for the dashboard, Causal Explorer, Policies, AI Analyst, Attestation, Model Registry, API Docs, Architecture, Authentication, and a not-found route. fileciteturn36file0
 
 ## 2. Evidence status
 
-| Area | Status | Evidence requirement |
+| Area | Status | Evidence |
 |---|---|---|
-| Security observability concept | ✅ Documented | Event/alert flow diagram |
-| Authorization architecture | ✅ Documented | RBAC/RLS test evidence |
-| Auditability | ✅ Documented | Sanitized audit-event examples |
-| Feature-management model | ✅ Documented | Feature-state test matrix |
-| AI-assisted analysis | 🧪 Needs measured evidence | Evaluation protocol + sample results |
-| Device attestation | 🗺️ Product direction | Integration proof before completion claim |
-| Model integrity | 🗺️ Product direction | Verification and revocation tests |
-| Production readiness | 🔒 Private / not claimed | Security review and deployment evidence |
+| React/Vite/TypeScript application | ✅ Verified | Repository package manifest and source tree |
+| Application routing | ✅ Verified | `src/App.tsx` |
+| Security-oriented product surfaces | ✅ Verified as application routes | Causal Explorer, Policies, AI Analyst, Attestation, Model Registry, API Docs, Architecture |
+| Automated test tooling | ✅ Declared | Vitest in package scripts/dependencies |
+| Full security backend | 🧪 Needs verification | Backend/data-path evidence |
+| Authorization/RLS enforcement | 🧪 Needs verification | Security tests and backend evidence |
+| AI quality/performance | 🧪 Needs measurement | Evaluation dataset + metrics |
+| Device attestation | 🗺️ Architecture/product direction | Integration proof required |
+| Model integrity lifecycle | 🗺️ Architecture/product direction | Verification/revocation tests required |
+| Production readiness | 🛑 Not claimed | Security review and deployment evidence required |
 
 ## 3. Security architecture
 
 ```text
-Telemetry
-   ↓
-Normalization
-   ↓
-Detection / Verdict
-   ↓
-Alert Management
-   ↓
-Investigation / Provenance
-   ↓
-Policy / Response
-   ↓
-Evidence / Audit
+Security Events / Data
+          ↓
+       Analysis
+          ↓
+    Verdict / Alert
+          ↓
+ Investigation
+          ↓
+ Policy / Response
+          ↓
+ Evidence / Audit
 ```
 
-Trust layers surround the workflow:
-
-- Server-side authorization
-- RBAC
-- Database RLS
-- Append-oriented audit records
-- Artifact/model integrity controls
-- Device trust / attestation where implemented
+Trust controls under evaluation include RBAC, server-side authorization, RLS, auditability, provenance, attestation, and model integrity.
 
 ## 4. Threat model focus
 
 Representative assets:
 
 - Security events
-- Verdicts and findings
-- Forensic evidence
+- Alerts and verdicts
+- Investigation evidence
 - Policies
 - Model artifacts
-- Device trust state
+- Device trust information
 - Authorization metadata
 - Audit records
 
 Representative threats:
 
+- Unauthorized access
 - Privilege escalation
-- Unauthorized data access
-- Tampering with audit evidence
-- Malicious or untrusted model artifacts
+- Data-isolation failure
+- Evidence tampering
+- Malicious model/artifact modification
 - Policy manipulation
-- False or misleading security verdicts
-- Cross-tenant or cross-role data exposure
+- False or misleading AI-assisted conclusions
 
-## 5. Authorization tests
+## 5. Validation plan
 
-A mature implementation should validate:
+The next validation cycle should cover:
 
-1. Role-to-permission boundaries.
-2. Server-side authorization independently of UI visibility.
-3. RLS isolation between principals/tenants where applicable.
-4. Default-disabled feature behavior.
-5. Unauthorized feature activation rejection.
-6. Audit trail generation for sensitive administrative actions.
+1. `npm run build` reproducibility.
+2. `npm test` / Vitest results.
+3. Route-level functional tests.
+4. Authentication tests.
+5. Authorization tests.
+6. RLS/data-isolation tests where applicable.
+7. Dependency and secret scanning.
+8. Error and failure-path testing.
+9. Sanitized UI screenshots.
+10. Threat-model verification.
 
 ## 6. AI-security evaluation
 
-Where AI-assisted analysis is implemented, evaluate:
+Do not publish accuracy claims until measured. Recommended metrics:
 
-- Explanation accuracy
 - Analyst agreement
+- Explanation correctness
 - Hallucination/error rate
 - Confidence calibration
 - False-positive/false-negative behavior
-- Stability across representative events
-- Data-leakage boundaries
-- Human-review workflow
+- Response latency
+- Evaluation coverage
+- Human-review override rate
 
-## 7. Provenance evidence
+## 7. Public evidence
 
-Useful public evidence can include sanitized:
+Suitable evidence can include:
 
-- Event lineage examples
-- Causal-chain diagrams
-- Audit records
-- Policy version history
-- Model metadata
-- Integrity verification results
+- Architecture diagrams
+- Route map
+- Sanitized screenshots
+- Test summaries
+- Build/test logs without secrets
+- Security-test tables
+- Threat model
+- Evaluation methodology and results
 
-## 8. Production-readiness boundary
-
-Do not describe CoreProvenance as production-complete unless supporting evidence covers authentication/authorization review, data isolation, logging, secret management, dependency hygiene, error handling, deployment controls, backup/recovery, and security testing.
-
-## 9. Canonical sources
+## 8. Canonical sources
 
 - [CoreProvenance case study](./Core-Provenance-AI.md)
 - [Evidence Matrix](../EVIDENCE-MATRIX-2026.md)
+- [Global Benchmark 2026](../GLOBAL-BENCHMARK-2026.md)
 - [Private canonical repository](https://github.com/mukhtarprov1-hue/core-provenance-ai)
 
-## 10. Responsible security
+## 9. Responsible security
 
 Security operations and security APIs must be restricted to authorized defensive environments and controlled research settings.
