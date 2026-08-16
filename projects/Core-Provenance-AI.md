@@ -1,109 +1,70 @@
 # CoreProvenance™ — Security Intelligence & Provenance Platform
 
-> **Private product · Public technical case study**
+> **Private product · Public technical case study · Evidence-backed status**
 
 ## 1. Executive Summary
 
-CoreProvenance is a security-focused web dashboard and management platform designed as a command center for security telemetry, forensic investigation, policy management, model lifecycle, device trust and security APIs.
+CoreProvenance is a security-focused web application concept designed as a command center for security telemetry, investigation, policy management, AI-assisted analysis, model lifecycle, device trust, provenance, and security APIs.
 
-The available repository materials describe a product centered on **security observability, provenance, explainability and controlled security operations**. The public portfolio documents the verified product direction without publishing source code.
+The public portfolio distinguishes the **currently verifiable web application implementation** from the broader product architecture and future security capabilities.
 
-## 2. Product Concept
+## 2. Verified Implementation Snapshot
 
-The platform connects several security workflows that are often fragmented across separate tools:
+The canonical repository is a Vite + React + TypeScript application. Its verified package configuration includes Vite, React 18, TypeScript 5, React Router, TanStack React Query, Vitest, Zod, Recharts, Supabase client libraries, and a broad Radix/shadcn UI component layer. The repository also contains `src/pages`, `src/components`, `src/hooks`, `src/integrations`, `src/lib`, and `src/test` directories. fileciteturn34file0 fileciteturn35file0
+
+The application routing currently exposes concrete page surfaces for:
+
+- Main dashboard
+- Causal Explorer
+- Policies
+- AI Analyst
+- Attestation
+- Model Registry
+- API Documentation
+- Architecture
+- Authentication
+
+These routes are implemented in `src/App.tsx`. fileciteturn36file0
+
+## 3. Product Concept
+
+The intended security workflow is:
 
 ```text
 Telemetry → Detection → Verdict → Investigation → Policy → Evidence → Response
 ```
 
-The product plan also introduces device attestation, model integrity and controlled feature management as trust layers around the security workflow.
+The product architecture additionally explores device trust, attestation, model integrity, feature controls, and security provenance.
 
-## 3. Primary Product Surfaces
+## 4. Primary Product Surfaces
 
-### SOC Dashboard
+### Security Dashboard
 
-- Real-time event and alert visibility
-- Threat-severity distribution
-- Host health views
-- Recent verdict feed
-- Activity timeline
+Designed for event, alert, status, and security-operation visibility.
 
 ### Causal / Forensic Explorer
 
-Interactive investigation model for relationships between:
+Designed to support relationships between processes, files, network activity, user actions, and security events.
 
-- Processes
-- Files
-- Network sockets
-- Kernel objects
-- User actions
+### Alert / Policy Workflows
 
-The plan describes process/event chains and cross-host correlation as core investigation concepts.
+Designed for security findings, severity/context filtering, policy management, and controlled changes.
 
-### Alert Management
+### AI Analyst
 
-- Severity filtering
-- Host and timestamp filtering
-- Alert details with event context
-- Acknowledge/escalate workflows
-- Structured evidence export
+Designed as an analyst-assistance surface for explaining events and producing human-readable security context.
 
-### Policy Management
+### Attestation / Model Registry
 
-- Detection policy CRUD
-- Policy templates
-- Version history
-- Per-host or per-group enablement
-- Rootkit/persistence/anomaly-oriented examples
+Implemented as navigable application surfaces representing the broader trust and model-lifecycle architecture.
 
-### Model Registry
+### Architecture / API Documentation
 
-- Model versions
-- Metadata
-- Deployment status
-- Integrity/signature information
-- Revocation workflows
-- Federation status concepts
+Dedicated product surfaces exist for architectural communication and API documentation.
 
-### Device Trust & Attestation
+## 5. Security Architecture Direction
 
-- Host trust status
-- TPM attestation state
-- Certificate validity
-- Revocation-list views
-- Remote attestation workflow concept
-
-## 4. AI-Assisted Security Analysis
-
-The planned AI layer supports security analysts through tasks such as:
-
-- Explain an alert
-- Explain a causal chain
-- Suggest detection policies
-- Produce human-readable security summaries
-- Provide bilingual English/Arabic interpretations
-
-The design also describes explainable verdicts with confidence information and feature-importance context.
-
-These capabilities are documented as **product direction from the repository plan**, not as a claim that all features are production-complete.
-
-## 5. Security Model
-
-The engineering plan identifies several defense-in-depth controls:
-
-- Role-based access control
-- Supabase Row Level Security (RLS)
-- Append-only audit logs
-- Server-side authorization decisions
-- Device attestation concepts
-- Integrity verification for model/snippet artifacts
-- Signed forensic-bundle metadata
-- mTLS documentation
-- Controlled handling of potentially abusable security APIs
-
-## 6. Authorization Architecture
-
-The planned authorization hierarchy is:
+The intended authorization hierarchy is:
 
 ```text
 System
@@ -119,87 +80,95 @@ Business Rules
 Database RLS
 ```
 
-This structure is designed so that UI visibility is not treated as the security boundary; the final authorization decision remains server-side.
+This is a **security architecture direction** and should not be interpreted as proof that every control is production-complete.
 
-## 7. Feature Management
+## 6. Security Model
 
-The architecture includes a manifest/feature evaluation layer covering:
+The broader design considers:
 
-- Systems
-- Modules
-- Features
-- Permissions
-- Roles
-- Feature flags
-- User/role/region targeting
-- Percentage rollout
-- Subscription-aware access
-- Audit trails
+- Role-based access control
+- Server-side authorization
+- Database Row Level Security (RLS)
+- Append-oriented audit logging
+- Device attestation
+- Artifact/model integrity
+- Evidence provenance
+- Controlled feature activation
 
-A key design rule is that newly created systems/modules/features default to disabled until explicitly enabled by an authorized administrator.
+Where a capability has not been verified in the repository, it remains explicitly categorized as architecture or roadmap.
+
+## 7. AI-Assisted Security
+
+The AI Analyst surface exists in the current application structure. The security-analysis concept includes alert explanation, causal-chain explanation, policy assistance, and human-readable summaries.
+
+Evaluation evidence is still required before claiming production-grade AI accuracy or reliability.
 
 ## 8. Verified Technology Direction
 
 - React 18
 - TypeScript 5
 - Vite 5
-- Supabase
-- TanStack React Query
 - React Router
-- Tailwind CSS
-- Radix UI
-- Recharts
-- React Hook Form
-- Zod
+- TanStack React Query
 - Vitest
-- Lovable Cloud / AI integration
+- Zod
+- Recharts
+- Supabase client
+- Radix UI / shadcn-style components
+- Tailwind CSS
 
-## 9. Data & Audit Model
+The package configuration is the source of truth for this technology list. fileciteturn34file0
 
-The documented architecture includes data structures for:
+## 9. Evidence Boundary
 
-- Profiles
-- Roles
-- Kernel/security events
-- ML verdicts
-- Model snippets
-- Attestation records
-- Audit logs
-- Forensic bundles
-- Systems/modules/features
-- Permissions
-- Feature flags
-- Subscription plans
-- User subscriptions
+### Verified
 
-The plan explicitly treats audit logging as an immutable/append-oriented security record.
+- Vite/React/TypeScript application structure
+- Existing source directories
+- Concrete application routes/pages
+- Dependency and test tooling declarations
 
-## 10. Product Boundaries
+### Architectural direction
 
-CoreProvenance should be understood as a **security intelligence and management platform**, not simply a dashboard. Its proposed boundary spans telemetry ingestion, analysis, investigation, policy, trust and evidence workflows.
+- Full SOC telemetry pipeline
+- Provenance-backed forensic workflow
+- Device attestation
+- Model signing/integrity lifecycle
+- Production authorization enforcement
+- Full audit/evidence backend
 
-## 11. Implementation Status
+### Not claimed
 
-The public case study intentionally separates:
+- Production-ready security operations platform
+- Complete backend telemetry ingestion
+- Validated AI detection performance
+- Independently audited security controls
 
-- **Verified implementation/material** — repository files, package configuration and implemented UI structure.
-- **Architectural/product plan** — features explicitly described in the project's engineering plan.
-- **Production readiness** — not claimed unless supported by evidence.
+## 10. Required Next Validation
 
-## 12. Source & Privacy
+The strongest next evidence should establish:
 
-Canonical implementation remains private:
+1. Build success and reproducibility.
+2. Unit/component test results.
+3. Route/page functional validation.
+4. Authentication and authorization tests.
+5. Data-isolation/RLS tests if backend controls are enabled.
+6. Dependency and secret scanning.
+7. Sanitized screenshots of implemented surfaces.
+8. Threat model and trust-boundary diagram.
+
+## 11. Canonical Source
 
 [core-provenance-ai](https://github.com/mukhtarprov1-hue/core-provenance-ai)
 
-The repository contains environment configuration material; therefore the source remains private and is **not copied, mirrored or published** in the public portfolio.
+The implementation repository remains private and is the source of truth for code.
 
-## 13. Related
+## 12. Related Portfolio Evidence
 
-- [Mukhtar Alawady Portfolio](https://github.com/mukhtarprov1-hue/Mukhtar-Alawady)
-- [GitHub Profile](https://github.com/mukhtarprov1-hue)
-- [LinkedIn](https://www.linkedin.com/in/mukhtar-alawady-078697382/)
+- [CoreProvenance Evidence Pack](./CoreProvenance-EVIDENCE.md)
+- [Portfolio Evidence Matrix](../EVIDENCE-MATRIX-2026.md)
+- [Global Benchmark 2026](../GLOBAL-BENCHMARK-2026.md)
 
-## 14. Responsible Security
+## 13. Responsible Security
 
-Security operations, telemetry analysis and any potentially abusable functionality should be used only in authorized environments and controlled research or defensive settings.
+Security operations, telemetry analysis, attestation workflows, and any potentially abusable security functionality should be used only in authorized defensive environments and controlled research settings.
