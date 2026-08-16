@@ -17,7 +17,7 @@
 | **AI-Assisted Website Security Assessment** | Web Security / AI Security | Security assessment project; source not republished | [Evidence](./AI-Assisted-Website-Security-Assessment-EVIDENCE.md) |
 | **CyberVision** | Network Monitoring / Security Analysis | Network security project; source not republished | [Evidence](./CyberVision-EVIDENCE.md) |
 | **Network Security & IDS Labs** | Network Security / Detection | Practical lab track; source not republished | [Evidence](./Network-Security-IDS-Labs-EVIDENCE.md) |
-| **CoreProvenance** | SOC / Security Intelligence / AI-Assisted Analysis | [core-provenance-ai](https://github.com/mukhtarprov1-hue/core-provenance-ai) | Case study in progress |
+| **CoreProvenance** | SOC / Security Intelligence / AI-Assisted Analysis | [core-provenance-ai](https://github.com/mukhtarprov1-hue/core-provenance-ai) | [Evidence](./CoreProvenance-EVIDENCE.md) |
 | **Yemen Cyber Security** | Cybersecurity Initiative / Knowledge Platform | [yemen-cyber-security](https://github.com/mukhtarprov1-hue/yemen-cyber-security) | Case study in progress |
 | **AMAN / Amntak** | Cybersecurity Learning / Hands-on Labs / Community | [AMAN](https://github.com/mukhtarprov1-hue/AMAN) | Case study in progress |
 | **Amntak Web** | Web Client / Cybersecurity Learning Platform | [amntak-web](https://github.com/mukhtarprov1-hue/amntak-web) | Case study in progress |
@@ -29,7 +29,7 @@
 - [AI-Assisted Website Security Assessment](./AI-Assisted-Website-Security-Assessment.md) · [Evidence Pack](./AI-Assisted-Website-Security-Assessment-EVIDENCE.md)
 - [CyberVision](./CyberVision.md) · [Evidence Pack](./CyberVision-EVIDENCE.md)
 - [Network Security & IDS Labs](./Network-Security-IDS-Labs.md) · [Evidence Pack](./Network-Security-IDS-Labs-EVIDENCE.md)
-- [CoreProvenance](./Core-Provenance-AI.md)
+- [CoreProvenance](./Core-Provenance-AI.md) · [Evidence Pack](./CoreProvenance-EVIDENCE.md)
 - [Rawaa (رواء)](./Rawaa.md)
 - [Yemen Cyber Security](./Yemen-Cyber-Security.md)
 - [AMAN / Amntak](./AMAN.md)
