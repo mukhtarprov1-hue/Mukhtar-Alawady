@@ -1,41 +1,42 @@
 # Projects
 
 > Canonical portfolio index for Mukhtar Alawady's software, cybersecurity, networking, research, and security-engineering work.
->
+
 > **Portfolio rule:** this repository is an index and documentation layer. Original source code remains in its original repository. No project is deleted, moved, copied, or republished here without explicit authorization.
+
+## Evidence-First Navigation
+
+- [Global Cybersecurity GitHub Benchmark 2026](../GLOBAL-BENCHMARK-2026.md)
+- [Cybersecurity Evidence Matrix 2026](../EVIDENCE-MATRIX-2026.md)
 
 ## Featured Projects
 
-| Project | Area | Canonical repository | Portfolio status |
+| Project | Area | Canonical repository | Evidence pack |
 |---|---|---|---|
-| **CyberShield** | Android Cybersecurity / Mobile Security | [CyberShieldHQ](https://github.com/mukhtarprov1-hue/CyberShieldHQ) | Primary project; source remains private |
-| **AMAN / Amntak** | Cybersecurity Learning / Hands-on Labs / Community | [AMAN](https://github.com/mukhtarprov1-hue/AMAN) | Private product; public case study |
-| **Amntak Web** | Web Client / Cybersecurity Learning Platform | [amntak-web](https://github.com/mukhtarprov1-hue/amntak-web) | Private product; public case study |
-| **Yemen Cyber Security** | Cybersecurity Initiative / Knowledge Platform | [yemen-cyber-security](https://github.com/mukhtarprov1-hue/yemen-cyber-security) | Private initiative; public case study |
-| **CoreProvenance** | SOC / Security Intelligence / AI-Assisted Analysis | [core-provenance-ai](https://github.com/mukhtarprov1-hue/core-provenance-ai) | Private project; architecture case study |
-| **Rawaa (رواء)** | Water Management / Community Operations Platform | [flowing-wellspring-cooperation-acceabc8](https://github.com/mukhtarprov1-hue/flowing-wellspring-cooperation-acceabc8) | Private product; architecture case study |
-| **AI-Assisted Website Security Assessment** | Web Security / AI Security | Security assessment project; source not republished | Public case study |
-| **CyberVision** | Network Monitoring / Security Analysis | Network security project; source not republished | Public case study |
-| **Network Security & IDS Labs** | Network Security / Detection | Practical lab track; source not republished | Public case study |
+| **CyberShield** | Android Cybersecurity / Mobile Security | [CyberShieldHQ](https://github.com/mukhtarprov1-hue/CyberShieldHQ) | [Evidence](./CyberShield-EVIDENCE.md) |
+| **AI-Assisted Website Security Assessment** | Web Security / AI Security | Security assessment project; source not republished | [Evidence](./AI-Assisted-Website-Security-Assessment-EVIDENCE.md) |
+| **CyberVision** | Network Monitoring / Security Analysis | Network security project; source not republished | [Evidence](./CyberVision-EVIDENCE.md) |
+| **Network Security & IDS Labs** | Network Security / Detection | Practical lab track; source not republished | [Evidence](./Network-Security-IDS-Labs-EVIDENCE.md) |
+| **CoreProvenance** | SOC / Security Intelligence / AI-Assisted Analysis | [core-provenance-ai](https://github.com/mukhtarprov1-hue/core-provenance-ai) | Case study in progress |
+| **Yemen Cyber Security** | Cybersecurity Initiative / Knowledge Platform | [yemen-cyber-security](https://github.com/mukhtarprov1-hue/yemen-cyber-security) | Case study in progress |
+| **AMAN / Amntak** | Cybersecurity Learning / Hands-on Labs / Community | [AMAN](https://github.com/mukhtarprov1-hue/AMAN) | Case study in progress |
+| **Amntak Web** | Web Client / Cybersecurity Learning Platform | [amntak-web](https://github.com/mukhtarprov1-hue/amntak-web) | Case study in progress |
+| **Rawaa (رواء)** | Water Management / Community Operations Platform | [flowing-wellspring-cooperation-acceabc8](https://github.com/mukhtarprov1-hue/flowing-wellspring-cooperation-acceabc8) | Architecture case study |
 
 ## Documented Project Pages
 
-- [CyberShield](./CyberShield.md)
-- [AMAN / Amntak](./AMAN.md)
-- [Amntak Web](./Amntak-Web.md)
-- [Yemen Cyber Security](./Yemen-Cyber-Security.md)
+- [CyberShield](./CyberShield.md) · [Evidence Pack](./CyberShield-EVIDENCE.md)
+- [AI-Assisted Website Security Assessment](./AI-Assisted-Website-Security-Assessment.md) · [Evidence Pack](./AI-Assisted-Website-Security-Assessment-EVIDENCE.md)
+- [CyberVision](./CyberVision.md) · [Evidence Pack](./CyberVision-EVIDENCE.md)
+- [Network Security & IDS Labs](./Network-Security-IDS-Labs.md) · [Evidence Pack](./Network-Security-IDS-Labs-EVIDENCE.md)
 - [CoreProvenance](./Core-Provenance-AI.md)
 - [Rawaa (رواء)](./Rawaa.md)
-- [AI-Assisted Website Security Assessment](./AI-Assisted-Website-Security-Assessment.md)
-- [CyberVision](./CyberVision.md)
-- [Network Security & IDS Labs](./Network-Security-IDS-Labs.md)
+- [Yemen Cyber Security](./Yemen-Cyber-Security.md)
+- [AMAN / Amntak](./AMAN.md)
+- [Amntak Web](./Amntak-Web.md)
 - [Verdent](./Verdent.md)
 - [Pionerix](./Pionerix.md)
 - [Flowing Wellspring Cooperation](./Flowing-Wellspring-Cooperation.md)
-
-## Repository Transparency
-
-Some case studies are based on implementation evidence available in private source repositories. When the available material is only a roadmap, plan, minimal README, or empty repository, the portfolio explicitly labels that limitation rather than inventing product claims.
 
 ## Product Case Study Standard
 
@@ -52,66 +53,9 @@ Each substantive project page aims to cover:
 9. Roadmap / next-stage direction when documented
 10. Canonical repository link
 
-## Portfolio Classification
-
-### Security Engineering
-- Security architecture
-- Threat modeling
-- Secure coding
-- Security testing
-- Vulnerability management
-
-### Cybersecurity Learning & Platforms
-- Security education
-- Hands-on labs
-- Course and progress systems
-- Authentication and authorization
-- Security-oriented dashboards
-
-### Network Security
-- TCP/IP and protocol analysis
-- Routing and switching security
-- Network monitoring
-- IDS/IPS concepts
-- VPNs and network segmentation
-
-### Offensive Security
-- Reconnaissance
-- Vulnerability assessment
-- Web security testing
-- Penetration testing
-- Security reporting
-
-### Digital Forensics & Reverse Engineering
-- Evidence handling
-- Disk and memory analysis
-- Binary analysis
-- Static and dynamic analysis
-- Malware analysis
-
-### Mobile & Cloud Security
-- Android security
-- Secure storage and permissions
-- Cloud IAM and network controls
-- Container and infrastructure security
-
-### AI Security & Automation
-- Security analytics
-- Anomaly detection
-- Automation
-- Threat-intelligence integration
-- Security tool development
-
-### Domain Platforms
-- Water-management systems
-- Role and permission models
-- Feature flags
-- Subscription-aware access
-- Audit logging and RLS
-
 ## Evidence Standard
 
-Product claims in this portfolio are based on verifiable repository material and the project documentation available for the work. Planned capabilities are labeled as planned or architectural direction; features are not described as production-complete without supporting evidence.
+Product claims in this portfolio are based on verifiable repository material and project documentation. Planned capabilities are labeled as planned or architectural direction; features are not described as production-complete without supporting evidence.
 
 ## Source-of-Truth Rule
 
