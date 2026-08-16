@@ -1,14 +1,18 @@
 # Mukhtar Alawady — Cybersecurity Portfolio
 
-> **Cybersecurity & Networks Graduate · Security Engineering · Network Security · Application Security**
+> **Cybersecurity & Networks Graduate · Security Engineering · Application Security · Network Defense · AI Security**
 
 🎓 **Bachelor of Cybersecurity and Networks** — Amran University, Yemen · **2026**
 
-This repository is my **personal portfolio and documentation index**. It organizes my cybersecurity projects, security labs, research, automation work, technical documentation, and selected academic work in one place.
+This repository is my **personal cybersecurity portfolio and documentation index**. It organizes cybersecurity projects, security labs, research, automation work, technical documentation, and selected academic work while keeping original project source code in its canonical repository.
 
-> **Portfolio-only policy:** this repository is an index and documentation layer. It does **not** replace, delete, move, or republish the source code of existing projects. Original project repositories remain independent, and private repositories remain private unless I explicitly decide otherwise.
+> **Portfolio-only policy:** this repository is an evidence and documentation layer. It does **not** replace, delete, move, or republish the source code of existing projects. Private source repositories remain private unless explicitly made public.
 
----
+## 🌍 Global Benchmark 2026
+
+[**Read the Global Cybersecurity GitHub Benchmark**](./GLOBAL-BENCHMARK-2026.md)
+
+The portfolio is being developed around an evidence-first standard inspired by strong cybersecurity research, engineering, offensive-security, defensive-security, and AI-security portfolios: clear positioning, verifiable implementation evidence, case studies, security controls, testing methodology, limitations, responsible-use boundaries, and reproducible documentation.
 
 ## 🧭 Portfolio Map
 
@@ -26,30 +30,30 @@ This repository is my **personal portfolio and documentation index**. It organiz
 | ⚙️ Security Automation | Python, scripting, APIs, security tooling and workflow automation |
 | 📚 Research | Cybersecurity research, technical writing and documentation |
 
----
+## 🚀 Featured Security Work
 
-## 🚀 Featured Work
-
-### 🛡️ [CyberShield](./projects/cybershield.md)
+### 🛡️ [CyberShield](./projects/CyberShield.md)
 Android cybersecurity platform focused on practical device-security capabilities, privacy, permissions, secure storage, network security, and security monitoring.
 
 **Canonical repository:** [CyberShieldHQ](https://github.com/mukhtarprov1-hue/CyberShieldHQ)
 
-### 🌐 [Yemen Cyber Security](./projects/yemen-cyber-security.md)
+### 🤖 [AI-Assisted Website Security Assessment](./projects/AI-Assisted-Website-Security-Assessment.md)
+Application-security work combining authorized web assessment, OWASP-oriented testing, APIs, automated analysis, and machine-learning techniques.
+
+### 🖥️ [CyberVision](./projects/CyberVision.md)
+Network-monitoring and security-analysis work focused on traffic visibility, packet analysis, monitoring concepts, and security-oriented controls.
+
+### 🛰️ [Network Security & IDS Labs](./projects/Network-Security-IDS-Labs.md)
+Practical defensive-security work covering packet analysis, monitoring, segmentation, routing, VPNs, and intrusion-detection concepts.
+
+### 🔎 [CoreProvenance](./projects/Core-Provenance-AI.md)
+Security-intelligence and forensic dashboard concept covering event monitoring, alert management, causal exploration, policy management, model registry, attestation, auditability, and AI-assisted analysis.
+
+### 🌐 [Yemen Cyber Security](./projects/Yemen-Cyber-Security.md)
 Cybersecurity initiative focused on organizing security knowledge, practical resources, research, awareness, and technical work relevant to Yemen.
 
-**Canonical repository:** [yemen-cyber-security](https://github.com/mukhtarprov1-hue/yemen-cyber-security)
-
-### 🖥️ CyberVision
-Network-security and monitoring work focused on traffic visibility, packet analysis, monitoring concepts, and security-oriented controls.
-
-### 🤖 AI-Assisted Website Security Assessment
-Security-assessment work combining web vulnerability discovery, OWASP-oriented testing, APIs, automated analysis, and machine-learning techniques.
-
-### 🛰️ Network Security & IDS Labs
-Practical networking and defensive-security work covering packet analysis, monitoring, segmentation, routing, VPNs, and intrusion-detection concepts.
-
----
+### 🧪 [AMAN / Amntak](./projects/AMAN.md)
+Cybersecurity learning and hands-on practice platform covering courses, labs, authentication, progression, profiles, community features, real-time notifications, and subscription workflows.
 
 ## 📚 Portfolio Navigation
 
@@ -58,9 +62,8 @@ Practical networking and defensive-security work covering packet analysis, monit
 - **[Research](./research/)** — research notes and technical studies
 - **[Tools](./tools/)** — security automation and utility documentation
 - **[Documentation](./documentation/)** — architecture, testing, and engineering notes
+- **[Global Benchmark 2026](./GLOBAL-BENCHMARK-2026.md)** — portfolio quality and evidence standard
 - **[Portfolio Policy](./PORTFOLIO_POLICY.md)** — preservation, privacy, and source-code rules
-
----
 
 ## 🧰 Technical Toolbox
 
@@ -88,13 +91,9 @@ Practical networking and defensive-security work covering packet analysis, monit
 ### Development & Data Platforms
 `Git` `GitHub` `FastAPI` `Flask` `PostgreSQL` `MySQL` `SQLite`
 
----
-
 ## 🔬 Security Methodologies & Standards
 
 `OWASP` · `MITRE ATT&CK` · `PTES` · `NIST CSF` · `NIST SP 800-115` · `ISO/IEC 27001` · `CIS Controls` · `Cyber Kill Chain`
-
----
 
 ## 🎓 Academic Foundation
 
@@ -126,8 +125,6 @@ Selected academic areas:
 - Cybersecurity Programming
 - Graduation Project I & II
 
----
-
 ## 📂 Portfolio Structure
 
 ```text
@@ -138,32 +135,31 @@ Selected academic areas:
 ├── tools/           # Security automation and utility documentation
 ├── documentation/   # Architecture, testing, and technical documents
 ├── assets/          # Diagrams and supporting media
+├── GLOBAL-BENCHMARK-2026.md
 ├── PORTFOLIO_POLICY.md
 ├── SECURITY.md
 └── CONTRIBUTING.md
 ```
 
-Original source code stays in each project's own repository. This repository is the **presentation and documentation layer**.
-
----
+Original source code stays in each project's own repository. This repository is the **presentation, evidence, and documentation layer**.
 
 ## 📌 Project Documentation Standard
 
-For every project documented here, the portfolio aims to cover:
+For every substantive project documented here, the portfolio aims to cover:
 
 - Problem statement and objectives
 - Scope and assumptions
+- Users, assets, and trust boundaries where applicable
 - Architecture and design decisions
-- Technologies and dependencies
+- Security controls and threat considerations
+- Technologies and dependencies verified from source
 - Setup and usage information where appropriate
 - Functional and security testing
+- Evidence, observed results, and limitations
 - Screenshots or diagrams where useful
-- Limitations and known risks
 - Responsible-use guidance
 - Future improvements and roadmap
 - Link to the canonical project repository
-
----
 
 ## 🔐 Responsible Security
 
@@ -171,14 +167,10 @@ Security testing and offensive-security demonstrations published here are intend
 
 No credentials, API keys, private data, secrets, or sensitive production information should be committed to this portfolio repository.
 
----
-
 ## 🤝 Connect
 
 - 💼 **LinkedIn:** https://www.linkedin.com/in/mukhtar-alawady-078697382/
 - 🐙 **GitHub:** https://github.com/mukhtarprov1-hue
 - 📁 **Profile README:** https://github.com/mukhtarprov1-hue/mukhtarprov1-hue
-
----
 
 > **Learn deeply. Build practically. Test responsibly. Secure by design.**
